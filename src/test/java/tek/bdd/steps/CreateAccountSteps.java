@@ -32,7 +32,7 @@ public class CreateAccountSteps extends SeleniumUtility {
         selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
         selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Single");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "09/08/2006");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "09/07/2006");
     }
 
     @Then("click on Create Account button")
