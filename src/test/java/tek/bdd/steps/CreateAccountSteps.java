@@ -23,16 +23,16 @@ public class CreateAccountSteps extends SeleniumUtility {
     @Then("fill up create account form")
 
     public void fillUpCreateAccountForm() {
-        String prefix = "Jawid";
+        String prefix = "Altaf";
         String randomEmail = RandomGenerator.randomEmail(prefix);
         sendText(CreateAccountPageObject.EMAIL_INPUT, randomEmail);
         selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Mr.");
-        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Jawid");
-        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Gulzai");
+        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Altaf");
+        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Safi");
         selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
-        selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Married");
+        selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Single");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2006");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "09/08/2006");
     }
 
     @Then("click on Create Account button")
@@ -60,9 +60,9 @@ public class CreateAccountSteps extends SeleniumUtility {
     }
     @When("when the user fill up sign up form")
     public void whenTheUserFillUpSignUpForm() {
-        sendText(CreateAccountPageObject.USERNAME_INPUT, "Jawid");
-        sendText(CreateAccountPageObject.PASSWORD_INPUT, "Jawid123$");
-        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "Jawid123");
+        sendText(CreateAccountPageObject.USERNAME_INPUT, "Altaf");
+        sendText(CreateAccountPageObject.PASSWORD_INPUT, "War543$");
+        sendText(CreateAccountPageObject.CONFIRM_PASSWORD_INPUT, "War543$");
     }
     @Then("click on submit button")
     public void clickOnSubmitButton() {
@@ -72,14 +72,14 @@ public class CreateAccountSteps extends SeleniumUtility {
     @Then("fill up create account form page")
     public void fillUpCreateAccountFormPage() {
 
-        sendText(CreateAccountPageObject.EMAIL_INPUT, "Jawid422@gmail.com");
+        sendText(CreateAccountPageObject.EMAIL_INPUT, "Altaf5000@gmail.com");
         selectFromDropDown(CreateAccountPageObject.PREFIX_SELECT, "Mr.");
-        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Jawid");
-        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Gulzai");
+        sendText(CreateAccountPageObject.FIRST_NAME_INPUT, "Altaf");
+        sendText(CreateAccountPageObject.LAST_NAME_INPUT, "Safi");
         selectFromDropDown(CreateAccountPageObject.GENDER_SELECT, "Male");
         selectFromDropDown(CreateAccountPageObject.MARITAL_STATUS_SELECT, "Married");
         sendText(CreateAccountPageObject.EMPLOYMENT_STATUS, "Test Engineer");
-        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "07/07/2000");
+        sendText(CreateAccountPageObject.DATE_OF_BIRTH, "09/08/2000");
     }
     @When("validate account error message")
     public void validateAccountErrorMessage() {
